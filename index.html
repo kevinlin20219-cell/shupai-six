@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="festival">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7ee">
+  <meta name="description" content="把数学练出节奏！人教版2026秋新版六年级上册，分数、圆与百分数的音乐答题练习。">
+  <title>数拍！· 六上数学节奏练习</title>
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <script>
+    try {
+      const saved=JSON.parse(localStorage.getItem('shupai-six-v1'));
+      const theme=saved?.version===1&&saved.settings?.theme==='light'?'light':'festival';
+      document.documentElement.dataset.theme=theme;
+      document.querySelector('meta[name="theme-color"]').content=theme==='light'?'#fff9ee':'#9ebcff';
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=finale11h">
+  <link rel="stylesheet" href="./festival.css?v=themes13">
+  <link rel="stylesheet" href="./themes.css?v=themes13">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div id="app"></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.mjs?v=themes13"></script>
+</body>
+</html>
